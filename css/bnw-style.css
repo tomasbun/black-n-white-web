@@ -1,0 +1,863 @@
+@charset "utf-8";
+
+
+/*-------------- mobile -----------------------------------------*/
+
+
+	
+/*---------------	html and body	-----------------------------*/	
+	
+html,
+html * {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+	
+body{
+	width:100%;
+	background-color: whitesmoke;
+	margin:auto;
+	-webkit-box-shadow: 3px 0px 0px 0.5px #161616;
+	box-shadow: 5px 5px 10px 0.5px #161616;
+	}
+
+	
+/*-----------------header---------------------------------------*/	
+	
+header{
+	width:100%;
+	text-align: center;
+	background-color: black;
+	margin: 0.5% 0%;
+	
+}
+header img{
+	width: 100px;
+	margin-top: 15px;
+}
+	
+nav ul {
+		list-style-type: none;
+		display:none;
+		padding:5px 0px;
+		}
+	
+nav ul li a{
+	border-radius: 10px;
+	margin: 10px 2px;
+	padding:15px 10px;
+	display: inline-block;
+	letter-spacing: 2px;
+	text-decoration: none;
+	color: white;
+	font-family: droid-sans;
+	font-size: 11px;
+	text-transform: uppercase;
+	border: thin solid black;
+		}	
+nav ul li a:hover{
+	/*background-color: #730406;*/
+	background-color: white;
+	color:black;
+	border: thin solid white;
+}
+	
+#nav-active{
+		border: thin solid white;
+	}
+	
+#burger_label{
+			color:white;
+			font-size: 40px;
+			padding-bottom: 5px;
+			display: block;
+			cursor: pointer;
+			
+		}	
+#burger{
+		display: none;
+	}
+#burger:checked + nav ul{
+			display: block;
+			} 
+	
+	
+/*------------------footer ------------------------------------*/	
+	footer{
+		background-color: black;
+		color:white;
+		text-align: center;
+		margin: 0.5% 0%;
+		clear:left;
+	}
+	
+	footer ul{
+		padding: 15px;
+		list-style: none;
+	}
+	footer li{
+		padding: 5px 3px;
+		letter-spacing: 1.5px;
+		cursor: pointer;
+		}
+	footer li:hover{
+		text-decoration: underline;
+	}
+	footer p{
+		letter-spacing: 3px;
+		font-size: 100%;
+		word-spacing: 10px;
+		padding-bottom: 25px;
+	}
+	
+	#icons img{
+		width:35px;
+		opacity: 0.5;
+	}
+	#icons img:hover{
+		opacity: 1;
+	}
+	
+	#icons li{
+		padding: 0px 3px;
+		display: inline-block;
+		}
+		
+/*-------------------------form-------------------*/
+form{
+	
+	width: 98%;
+	margin: 1%;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	font-size: small;
+	text-align: center;
+
+	}
+
+form li{
+	padding:5px 0px;
+	display: inline-block;
+	width:90%;
+	text-align: center;
+}
+
+
+
+input, select, textarea{
+	background-color: black; 
+	color: white;
+	width: 100%;
+	height: 40px;
+	border-radius: 10px;
+	text-align: center;
+	border: thin solid white;
+	}
+textarea{
+	height:80px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: darkgray;
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: darkgray;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: darkgray;
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+}
+	
+
+input:hover{
+	border-color: darkgray;
+	border-radius: 20px;
+	border: medium solid white;
+}
+
+textarea:hover{
+	border-color: darkgray;
+	border-radius: 20px;
+	border: medium solid white;
+}
+select:hover{
+	border-color: darkgray;
+	border-radius: 20px;
+	border: medium solid white;
+}
+
+label{
+	
+	
+	margin:10px;
+}
+
+form p{
+	float:none;
+	padding:0px;
+	margin:0px;
+	width:auto;
+	
+	
+}
+
+#radio1, #radio2{
+	color: white;
+	width: auto;
+	height: auto;
+	border-radius: 0px;
+	text-align: center;
+	border: none;
+	float:none;
+	padding:0px;
+	margin:0px;
+	
+	
+}
+
+/*-----------------slideshow-----------------------------*/
+
+#slidecontrols{
+		width:100%;
+		text-align: center;
+		margin-bottom: -18px;
+	}
+	.circle{
+		width:25px;
+		text-align: center;
+		margin-bottom: -50px;
+		
+	}
+
+
+/*------------------title--------------------------------------*/
+
+
+
+#titleh{
+	background: rgb(0, 0, 0, 0.3);
+	font-family: poiret-one;
+	-webkit-text-stroke-width: 0.6px;
+	-webkit-text-stroke-color: black;
+	/*font-weight: 50;*/
+	color: white;
+	font-size: 35px;
+	text-transform: uppercase;
+	width:100%;
+	margin: 0px 0% 0px 0%; /*-125px*/
+	float:left;
+	}
+
+	#titlep{
+	
+	text-align: center;
+	background: rgb(0, 0, 0, 0.5);
+	-webkit-text-stroke-width: 0.5px;
+	-webkit-text-stroke-color: black;
+	font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	font-variant: small-caps;
+	font-size: 15px;
+	letter-spacing: 1px;
+	line-height: 0px;
+	width:100%;
+	margin: 0px 0% 50px 0%; 
+	float:left;
+	}
+
+
+
+/*----------------main----------------------------------------*/	
+#history_img{
+	margin-bottom: 40px;
+}
+
+
+
+a {text-decoration: none;}
+
+main, .u-link{
+	text-align: center;
+	font-family: abel;
+	}
+
+main img{
+	width:100%;
+	float:left;
+	border: thin solid black;
+	
+}
+
+main h1 {
+	font-family: poiret-one;
+	-webkit-text-stroke-width: 0.5px;
+	-webkit-text-stroke-color: black;
+	margin: 0px 0px 0px 0px;   /*-107 0 0 0*/
+	font-size: 3.5em;
+	font-weight: 400;
+}
+
+main p{
+	margin:-15px 15px 20px 15px;
+	padding:20px 0px;
+	text-align: justify;
+}
+	
+main{
+	width:99%;
+	margin:  0.1% 0.5% 0.5% 0.5%;
+	float:left;
+	color: whitesmoke;
+	background-color: black;
+	-webkit-box-shadow: 10px 10px 10px 0.5px #161616;
+	box-shadow: 3px 5px 10px 0.5px #161616;
+	
+	
+	}
+
+section{
+	width:100%;
+	float: left;
+}
+		
+	
+/*----------------u-link-----------------------*/
+
+.u-link {
+	width:99%;
+	margin: 0% 0.5%;
+	padding:20px;
+	text-align: center;
+	background-color: black;
+	color:white;
+	filter: grayscale(100%);
+	border-radius: 15px;
+	
+}
+.competition{
+	width:99%;
+	margin: 0% 0.5%;
+	padding:20px;
+	text-align: center;
+	background-color: black;
+	color:white;
+	filter: grayscale(100%);
+	border-radius: 15px;
+}
+
+.u-link:hover {
+	filter: grayscale(0%);
+}
+
+.u-link img, .competition img{
+	width:100%;
+}
+
+.u-link h2, .competition h2{
+	margin:14px;
+}
+
+.u-link p{
+	margin:15px 0px 15px 0px;
+	padding:2px;
+}
+
+	.competition p{
+	margin:15px 0px 20px 10px;
+	padding:20px 0px;
+	text-align: justify;
+	
+	}
+
+
+
+.button{
+	font-family:"droid-sans";
+	font-size: 15px;
+	color: white;
+	padding: 5px 12px;
+	margin :0px 1px;
+	border: thin solid white;
+	border-radius: 10px;
+	background-color: black;
+	cursor: pointer;
+	
+}
+
+.button:hover{
+	color: black;
+	background-color: white;
+	font-weight: bold;
+}
+
+/*-----------------------information page-----------------------*/
+
+#information{
+	text-align: justify;
+	
+	padding: 50px;	
+}
+
+#information p{
+	margin: 0px;
+	padding: 0px;
+}
+
+#information h2{
+	padding: 20px 0px;
+}
+
+/*----------------------image gallery---------------------------*/
+
+.small_img img{
+	background-color: black;
+	width:33.3%;
+	padding: 1px;
+	float: left;
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+.small_img img:hover{
+	opacity:1;
+	
+}
+
+
+.small_img{
+	background-color: black;	
+	width:90%;
+	margin: 0% 5%;
+}
+
+#nextprevious{
+	
+	width:100%;
+	float: left;
+	margin-top: -110px;
+}
+
+#nextprevious img{
+	border: none;
+	width:30px;
+	opacity: 0.5;
+}
+
+#nextprevious img:hover{
+	width:40px;
+	opacity:0.8;
+}
+
+#arrow-left{
+	float: left;
+	margin-left: 10px;
+}
+
+
+#arrow-right{
+	float: right;
+	margin-right: 10px;
+}
+
+
+
+
+/*--------------tablet portrait---------------------------------*/
+@media (min-width:480px) and (max-width:767px){
+		
+
+	body{
+		width:480px;	
+	}
+	
+	
+	.competition{
+	width:50%;
+	margin: 0% 0%;
+	padding:15px;
+	float:left;
+	background-color: black;
+	color:white;
+}
+	
+	#titleh{
+	background: rgb(0, 0, 0, 0.3);
+	font-family: poiret-one;
+	-webkit-text-stroke-width: 0.6px;
+	-webkit-text-stroke-color: black;
+	/*font-weight: 50;*/
+	color: white;
+	font-size: 60px;
+	text-transform: uppercase;
+	width:100%;
+	margin: -111px 0% 0px 0%; /*-125px*/
+	float:left;
+	}
+
+	#titlep{
+	
+	text-align: center;
+	background: rgb(0, 0, 0, 0.5);
+	-webkit-text-stroke-width: 0.5px;
+	-webkit-text-stroke-color: black;
+	font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	font-variant: small-caps;
+	font-size: 15px;
+	letter-spacing: 5px;
+	line-height: 0px;
+	width:100%;
+	margin: -41px 0% 50px 0%; 
+	float:left;
+	}
+	
+	main p{
+	margin:-15px 50px 20px 50px;
+	padding:20px 0px;
+	text-align: justify;
+	
+	
+}
+	
+	.competition p{
+	margin:15px 0px 20px 10px;
+	padding:0px 0px;
+	text-align: center;
+	
+	}
+	.u-link p{
+	margin:15px 0px 15px 0px;
+	padding:2px;
+}
+	
+	
+	form li{
+	padding:5px;
+	display: inline-block;
+	width:90%;
+	text-align: center;
+}
+
+#email1, #email2{
+	width:49.5%;
+}
+	
+	.small_img img{
+	width:25%;
+	;
+}
+
+
+
+	#nextprevious{
+	
+	width:100%;
+	float: left;
+	margin-top: -175px;
+}
+
+#nextprevious img{
+	border: none;
+	width:35px;
+}
+	
+	
+	
+	
+
+}
+
+/*--------------tablet landscape--------------------------------*/	
+@media (min-width: 768px) and (max-width:1023px){
+	
+body{
+		max-width: 778px;
+		}	
+		
+#burger_label, #burger{
+		display:none;
+		}
+
+nav ul {
+		display:inline-flex;
+		}
+
+
+footer li{
+		display: inline-block;
+		padding: 5px 15px;
+		}
+	
+
+
+.u-link{
+	width:50%;
+	margin: 0% 0%;
+	padding:15px;
+	float:left;
+	background-color: black;
+	color:white;
+	
+}
+
+.u-link img{
+	width:100%;
+}
+
+.u-link h2{
+	margin:14px;
+	
+}
+
+		.competition{
+	width:25%;
+	margin: 0% 0%;
+	padding:15px;
+	float:left;
+	background-color: black;
+	color:white;
+}
+
+	main h1 {
+	font-family: poiret-one;
+	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: black;
+	margin: 0px 0px 0px 0px;   /*-107 0 0 0*/
+	font-size: 9em;
+	font-weight: 400;
+}
+	
+	#titleh{
+	background: rgb(0, 0, 0, 0.3);
+	font-family: poiret-one;
+	-webkit-text-stroke-width: 2.3px;
+	-webkit-text-stroke-color: black;
+	/*font-weight: 50;*/
+	color: white;
+	font-size: 100px;
+	text-transform: uppercase;
+	width:100%;
+	margin: -158px 0% 0px 0%; /*-125px*/
+	float:left;
+	}
+
+	#titlep{
+	
+	text-align: center;
+	background: rgb(0, 0, 0, 0.5);
+	-webkit-text-stroke-width: 0.5px;
+	-webkit-text-stroke-color: black;
+	font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	font-variant: small-caps;
+	font-size: 25px;
+	letter-spacing: 10px;
+	line-height: 0px;
+	width:100%;
+	margin: -41px 0% 50px 0%; 
+	float:left;
+	}
+	
+		main p{
+	margin:-15px 50px 20px 50px;
+	padding:20px 0px;
+	text-align: justify;
+	
+	
+}
+	.competition p{
+	margin:15px 0px 20px 10px;
+	padding:0px 0px;
+	text-align: center;
+	
+	}
+	
+		.u-link p{
+	margin:15px 0px 15px 0px;
+	padding:2px;
+}
+	
+	
+		form li{
+	padding:5px;
+	display: inline-block;
+	width:70%;
+	text-align: center;
+}
+
+#email1, #email2{
+	width:49.5%;
+}
+	
+	
+	.small_img img{
+	width:12.5%;
+	
+}
+
+
+
+
+	
+#nextprevious{
+	
+	width:100%;
+	float: left;
+	margin-top: -275px;
+}
+
+#nextprevious img{
+	border: none;
+	width:40px;
+}
+	
+	
+	
+
+}
+
+/*--------------desktop-----------------------------------------*/	
+@media (min-width:1024px){
+	
+	body, header{
+		max-width: 1200px;
+	}	
+		
+	#burger_label, #burger{
+		display:none;
+		
+	}
+	
+	header img{
+		float:left;
+		padding:0px 0px 10px 5px;
+	}
+	
+	nav ul {
+		display:inline-flex;
+	}
+	
+	nav ul li a{
+			font-size: 15px;
+	}
+	
+	
+#titleh{
+	background: rgb(0, 0, 0, 0.3);
+	font-family: poiret-one;
+	-webkit-text-stroke-width: 2.3px;
+	-webkit-text-stroke-color: black;
+	/*font-weight: 50;*/
+	color: white;
+	font-size: 140px;
+	text-transform: uppercase;
+	width:100%;
+	margin: -205px 0% 0px 0%; /*-125px*/
+	float:left;
+	}
+
+#titlep{
+	
+	text-align: center;
+	background: rgb(0, 0, 0, 0.5);
+	-webkit-text-stroke-width: 0.5px;
+	-webkit-text-stroke-color: black;
+	font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	font-variant: small-caps;
+	font-size: 35px;
+	letter-spacing: 10px;
+	line-height: 0px;
+	width:100%;
+	margin: -41px 0% 50px 0%; 
+	float:left;
+	}
+		
+main h1 {
+	font-family: poiret-one;
+	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: black;
+	margin: 0px 0px 0px 0px;   /*-107 0 0 0*/
+	font-size: 9em;
+	font-weight: 400;
+}
+	
+	footer li{
+		display: inline-block;
+		padding: 5px 15px;
+		
+	}
+	
+	.u-link{
+	width:33.3%;
+	margin: 0% 0%;
+	padding:15px;
+	float:left;
+	background-color: black;
+	color:white;
+}
+
+	.competition{
+	width:20%;
+	margin: 0% 0%;
+	padding:15px;
+	float:left;
+	background-color: black;
+	color:white;
+}
+		main p{
+	margin:15px 80px 20px 80px;
+	padding:20px 0px;
+	text-align: justify;
+	
+	
+}
+	.competition p{
+	margin:15px 0px 20px 10px;
+	padding:0px 0px;
+	text-align: center;
+	
+	}
+	
+		.u-link p{
+	margin:15px 0px 15px 0px;
+	padding:2px;
+}
+	
+			form li{
+	padding:8px;
+	display: inline-block;
+	width:50%;
+	text-align: center;
+}
+
+#email1, #email2{
+	width:49.5%;
+}
+	.small_img img{
+	width:12.5%;
+	}
+
+
+
+
+	#nextprevious{
+	width:100%;
+	float: left;
+	margin-top: -400px;
+}
+
+#nextprevious img{
+	border: none;
+	width:40px;
+}
+
+#nextprevious img:hover{
+	width:50px;
+	opacity:0.8;
+	
+}
+	
+	
+	
+}
